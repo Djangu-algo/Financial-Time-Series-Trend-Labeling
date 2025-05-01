@@ -1,7 +1,10 @@
+# %%
+ 
 import akshare as ak
 from trend_labeling import auto_labeling
 import matplotlib.pyplot as plt
 
+# %%
 
 def plot_ts_with_trend_and_financial_extremes(ax, Date_list, Cls_list, trend_labels, x_interval):
     x = [i for i in range(len(Date_list))]
@@ -44,3 +47,7 @@ if __name__ == "__main__":
         title = "Trend Labeling of CSI 300 with w={}%".format(w*100)
         ax.set_title(title)
         plt.savefig('figures/' + '{}.png'.format(title))
+
+# %%
+stock_zh_index_daily_df
+# %%
